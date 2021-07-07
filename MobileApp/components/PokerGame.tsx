@@ -55,7 +55,7 @@ export default function LandingPage({ path }: { path: string }) {
           source={require('../assets/images/deckBack.jpeg')}
         ></Image>
       </View>
-      <Text style={styles.money}>AI Money: 500</Text>
+      <Text style={styles.money}>Your Money: 500</Text>
       <View style={styles.controlsContainer}>
         {/* <button style={styles.button}></button>
      <button style={styles.button}></button>
@@ -75,8 +75,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   card: {
-    marginRight: 5,
-    marginLeft: 5,
+    margin: 5,
     height: 90,
     width: 60,
   },
@@ -89,8 +88,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    margin: 5,
   },
   money: {
+    margin: 5,
     textAlign: 'center',
     fontSize: 26,
     fontWeight: '700',
