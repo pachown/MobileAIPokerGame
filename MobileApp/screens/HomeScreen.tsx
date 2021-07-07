@@ -1,15 +1,16 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
+import { withSafeAreaInsets } from 'react-native-safe-area-context';
 
-import EditScreenInfo from '../components/EditScreenInfo';
+import LandingPage from '../components/LandingPage';
 import { Text, View } from '../components/Themed';
 
-export default function TabTwoScreen() {
+export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
+      <Text style={styles.title}>Home</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
+      <LandingPage path="/screens/HomeScreen.tsx" />
     </View>
   );
 }
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 20,
+    fontSize: 40,
     fontWeight: 'bold',
   },
   separator: {
